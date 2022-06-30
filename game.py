@@ -1,11 +1,12 @@
 class Game:
 
     def __init__(self):
-        self.ai = ()
-        self.human = ()
+        self.player_one = None
+        self.player_two = None 
 
     def run_game(self):
         self.print_display_welcome_rules()
+        pass
 
     def print_display_welcome_rules(self):
         print("Welcome to Rock Paper Scissors Lizard Spock.")
