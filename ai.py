@@ -2,9 +2,8 @@ from player import Player
 import random
 
 class AI(Player):
-    def __init__(self, name):
-        super().__init__()
-        self.name = name 
+    def __init__(self):
+        super().__init__() 
         self.score = 0
 
     def choose_gesture(self):
