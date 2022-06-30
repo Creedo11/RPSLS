@@ -1,3 +1,6 @@
+from ai import AI
+from human import Human
+
 class Game:
 
     def __init__(self):
@@ -6,7 +9,7 @@ class Game:
 
     def run_game(self):
         self.print_display_welcome_rules()
-        pass
+        
 
     def print_display_welcome_rules(self):
         print("Welcome to Rock Paper Scissors Lizard Spock.")
@@ -26,5 +29,16 @@ class Game:
         print("Rock crushed Scissors")
 
     def choose_players(self):
-
-
+        user_choice = input("How many players? 1, 2 or 3 for a surprise?")
+        if user_choice == "1":
+            self.player_one = Human()
+            self.player_two = AI()
+        elif user_choice == "2":
+            self.player_one = Human()
+            self.player_two = Human()
+        elif user_choice == "3":
+            self.player_one = AI()
+            self.player_two = AI()
+        else:
+            print("Incorrect input. Please try again.")
+            
