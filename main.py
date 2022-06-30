@@ -10,10 +10,6 @@
 
 
 from game import Game
-# if __name__ == "__main__":
-#     game = Game()
-#     game.run_game()
-
 game_one = Game()
 game_one.run_game()
 

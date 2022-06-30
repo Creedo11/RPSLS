@@ -9,7 +9,8 @@ class Human(Player):
     def choose_gesture(self):
         print("Choose 0 for Rock\n" "Choose 1 for Paper\n" "Choose 2 for Scissors\n" "Choose 3 for Lizard\n" "Choose 4 for Spock\n")
         print(" ")
-        user_choice = input(f"{self.name}: choose your gesture ")
+        user_choice = input(f"{self.name}, choose your gesture: ")
+        print(" ")
         self.chosen_gesture = user_choice
         if user_choice == "0":
             self.chosen_gesture = "Rock"
@@ -32,7 +33,7 @@ class Human(Player):
             print(f"{self.name} has chosen {self.chosen_gesture}")
             print(" ")
         else:
-            print("Incorret input")
+            print("Incorret input, please try again. ")
             print(" ")
             self.choose_gesture()
 

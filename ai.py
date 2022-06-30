@@ -9,7 +9,9 @@ class AI(Player):
 
     def choose_gesture(self):
         self.chosen_gesture = random.choice(self.gesture_list)
-        print(f"{self.name} has picked {self.chosen_gesture}")
+        print(f"{self.name} has chosen {self.chosen_gesture}")
+
+
 
 
 
